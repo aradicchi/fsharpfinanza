@@ -1,2 +1,24 @@
-# Cos'è F# (effe sciarp)?
+# Primi passi in F#
+
+In questo capitolo vediamo quali sono le componenti principali del linguaggio che ci permettono di iniziare sin da subito a programmare. Si assume quindi che si abbia a disposizione un PC con un ambiente di programmazione funzionante fra quelli elencati in [precedenza](#doveusare).
+
+## Tipi ed operatori nativi
+
+La prima cosa da sapere, se si vuole programmare, è che in tutti i principali linguaggi di programmazione esistono dei tipi predefiniti[^foo_tipi]. 
+
+[^foo_tipi]: I tipi sono le componenti fondamentali a partire dalle quali vengono scritti i programmi tipo i numeri, le lettere, gli insiemi di lettere (stringhe), ecc. 
+
+F# eredita la maggior parte dei tipi degli altri linguaggi della famiglia .NET, ovvero:
+
+* Numeri:
+
+  * Interi (int = 32bit, int64 = 64bit);
+  * Reali (single = float32 = 32bit, float = double = 64bit);
+  * Decimali (decimal);
+
+* Caratteri e stringhe:
+
+## Costrutti 
+
+
 

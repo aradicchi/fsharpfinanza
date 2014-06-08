@@ -1,3 +1,29 @@
-# Perché questo libro?
+# Introduzione
 
-Perché si.
+## Cos'è F#?
+
+F# (pronuncia: "effe sciarp") è uno degli ultimi linguaggi di programmazione entrati nella famiglia .NET (pronuncia: "dot net") due delle cui caratteristiche principali sono:
+
+* supporto di una sintassi di programmazione assieme "funzionale" e "ad oggetti";
+* completa integrazione nel Framework .NET.
+
+Con *funzionale* s'intende un linguaggio che supporta la programmazione di tipo funzionale, ovvero in cui il flusso di esecuzione assume la forma di una serie di valutazioni di funzioni matematiche. Un linguaggio puramente funzionale è ad esempio *Haskell*.
+
+Con *ad oggetti* s'intende un linguaggio che permette di definire "oggetti software" in grado di interagire gli uni con gli altri attraverso lo scambio di messaggi. Un linguaggio puramente funzionale è ad esempio *Java*.
+
+## Dove posso usare F#? {#doveusare}
+
+F# può essere utilizzato da un qualsiasi PC avente come sistema operativo Windows, Linux o MacOS (grazie a Mono). Le informazioni necessarie alla sua installazione si trovano sul sito [fsharp.org](http://fsharp.org).
+
+Esistono vari ambienti di sviluppo per F#, i principali sono:
+
+* Visual Studio (2010 e successivi);
+* Visual Studio Express (2012 e successivi);
+* MonoDevelop;
+* Xamarin Studio;
+* Emacs, ecc.
+
+## Perché dovrei usare F#?
+
+Perché è un linguaggio moderno, con tipizzazione statica e dalla sintassi succinta. Con F# si può fare tutto quello che si fa ad esempio con C#, ma scrivendo molto meno codice.
+
