@@ -2,6 +2,16 @@
 
 In questo capitolo vediamo quali sono le componenti principali del linguaggio che ci permettono di iniziare sin da subito a programmare. Si assume quindi che si abbia a disposizione un PC con un ambiente di programmazione funzionante fra quelli elencati in [precedenza](#doveusare).
 
+## Ciao, Raga!
+
+Il primo passo che viene solitamente intrappreso quando si comincia a studiare un nuovo linguaggio di programmazione è quello di scrivere la serie di istruzioni che consente di stampare un messaggio su una console.
+
+Aprendo la console di *fsharp interattivo* del proprio ambiente di sviluppo (es. comando ``fsharpi`` in Linux, oppure la finestra della ``F# interactive console`` su Visual Studio) è sufficiente scrivere il seguente codice
+
+  println("Ciao, Raga!");;
+
+Questo è l'inizio di un percorso pieno di ostacoli.
+
 ## Tipi ed operatori nativi
 
 La prima cosa da sapere, se si vuole programmare, è che in tutti i principali linguaggi di programmazione esistono dei tipi predefiniti[^foo_tipi]. 
@@ -12,33 +22,35 @@ F# eredita tutti i tipi nativi della famiglia .NET aggiungendone alcuni, ovvero:
 
 * Numeri:
 
-  * Interi (`int` = 32bit, `int64` = 64bit), sono dei numeri senza componente decimale;
-  * Reali (`single` = `float32` = 32bit, `float` = `double` = 64bit), sono dei numeri con componente decimale;
-  * Decimali (`decimal`), sono dei numeri con componente decimale che non risentono delle approssimazioni dovute agli arrotondamenti di macchina durante le varie operazioni aritmetiche.
+  * Interi (`int` = `System.Int32` = 32bit, `int64` = `System.Int64` = 64bit), sono dei numeri senza componente decimale;
+  * Reali (`single` = `float32` = `System.Single` = 32bit, `float` = `double` = `System.Double` = 64bit), sono dei numeri con componente decimale;
+  * Decimali (`decimal` = `System.Decimal`), sono dei numeri con componente decimale che non risentono delle approssimazioni dovute agli arrotondamenti di macchina durante le varie operazioni aritmetiche.
 
 * Logici:
 
-  * vero/falso (`bool`), è il tipo che contiene uno stato vero o falso.
+  * vero/falso (`bool` = `System.Boolean`), è il tipo che contiene uno stato vero o falso.
 
 * Caratteri e stringhe:
 
-  * Caratteri singoli (`char`);
-  * Insiemi di caratteri (`string`).
+  * Caratteri singoli (`char` = `System.Char`);
+  * Insiemi di caratteri (`string` = `System.String`).
 
 * Contenitori:
 
   * Liste (`list<tipo>`), sono insiemi estendibili di oggetti di un certo tipo;
   * Array (`array<tipo>`), sono insiemi non estendibili di oggetti di un certo tipo;
   * Set (`set<tipo>`), sono insiemi di oggetti un certo tipo in cui vengono rimosse le duplicazioni di oggetti uguali;
-  * Tuple (`tipo1 * tipo2 * tipo3`), sono insiemi non estendibili di oggetti di vario tipo;
+  * Tuple (`(tipo_1 * tipo_2 * tipo_3 ... tipo_n)`), sono insiemi non estendibili di oggetti di vario tipo;
+  * Records (`{nome_1 : tipo_1; nome_2 : tipo_2}`), sono insiemi non estendibili di oggetti di vario tipo aventi ognuno il proprio nome;
 
 * Altri:
 
   * oggetto vuoto (`unit`), è un oggetto che non contiene niente;
   * oggetto opzionale (`option<tipo>`), è un oggetto che può contenere qualcosa oppure nulla;
-  * funzione (`tipo1 -> tipo2`), in F# possiamo trattare le funzioni come tipi, si tratta infatti sostanzialmente di oggetto che trasformano altri oggetti, e che possono essere passati come argomenti ad altre funzioni.
+  * funzione (`tipo1 -> tipo2`), in F# possiamo trattare le funzioni come tipi, si tratta infatti sostanzialmente di oggetti che trasformano altri oggetti, e che possono essere trasmessi a loro volta come argomenti di altri oggetti (es. funzioni).
 
-## Costrutti 
+## Esempi di utilizzo dei tipi principali
+
 
 
 
