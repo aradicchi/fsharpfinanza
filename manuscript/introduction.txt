@@ -2,7 +2,7 @@
 
 ## Cos'è F#?
 
-F# (pronuncia: "effe sciarp") è uno degli ultimi linguaggi di programmazione entrati nella famiglia .NET (pronuncia: "dot net") due delle cui caratteristiche principali sono:
+F# (pronuncia: "effe sciarp") è uno degli ultimi linguaggi di programmazione creati per il mondo .NET (pronuncia: "dot net") due delle cui caratteristiche principali sono:
 
 * supporto di una sintassi di programmazione assieme "funzionale" e "ad oggetti";
 * completa integrazione nel Framework .NET.

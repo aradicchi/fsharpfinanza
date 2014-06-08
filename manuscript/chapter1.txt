@@ -6,17 +6,37 @@ In questo capitolo vediamo quali sono le componenti principali del linguaggio ch
 
 La prima cosa da sapere, se si vuole programmare, è che in tutti i principali linguaggi di programmazione esistono dei tipi predefiniti[^foo_tipi]. 
 
-[^foo_tipi]: I tipi sono le componenti fondamentali a partire dalle quali vengono scritti i programmi tipo i numeri, le lettere, gli insiemi di lettere (stringhe), ecc. 
+[^foo_tipi]: I tipi sono i componenti fondamentali a partire dai quali vengono scritti i programmi tipo i numeri, le caratteri, gli insiemi di caratteri (stringhe), ecc. 
 
-F# eredita la maggior parte dei tipi degli altri linguaggi della famiglia .NET, ovvero:
+F# eredita tutti i tipi nativi della famiglia .NET aggiungendone alcuni, ovvero:
 
 * Numeri:
 
-  * Interi (int = 32bit, int64 = 64bit);
-  * Reali (single = float32 = 32bit, float = double = 64bit);
-  * Decimali (decimal);
+  * Interi (`int` = 32bit, `int64` = 64bit), sono dei numeri senza componente decimale;
+  * Reali (`single` = `float32` = 32bit, `float` = `double` = 64bit), sono dei numeri con componente decimale;
+  * Decimali (`decimal`), sono dei numeri con componente decimale che non risentono delle approssimazioni dovute agli arrotondamenti di macchina durante le varie operazioni aritmetiche.
+
+* Logici:
+
+  * vero/falso (`bool`), è il tipo che contiene uno stato vero o falso.
 
 * Caratteri e stringhe:
+
+  * Caratteri singoli (`char`);
+  * Insiemi di caratteri (`string`).
+
+* Contenitori:
+
+  * Liste (`list<tipo>`), sono insiemi estendibili di oggetti di un certo tipo;
+  * Array (`array<tipo>`), sono insiemi non estendibili di oggetti di un certo tipo;
+  * Set (`set<tipo>`), sono insiemi di oggetti un certo tipo in cui vengono rimosse le duplicazioni di oggetti uguali;
+  * Tuple (`tipo1 * tipo2 * tipo3`), sono insiemi non estendibili di oggetti di vario tipo;
+
+* Altri:
+
+  * oggetto vuoto (`unit`), è un oggetto che non contiene niente;
+  * oggetto opzionale (`option<tipo>`), è un oggetto che può contenere qualcosa oppure nulla;
+  * funzione (`tipo1 -> tipo2`), in F# possiamo trattare le funzioni come tipi, si tratta infatti sostanzialmente di oggetto che trasformano altri oggetti, e che possono essere passati come argomenti ad altre funzioni.
 
 ## Costrutti 
 
